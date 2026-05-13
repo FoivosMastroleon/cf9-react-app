@@ -4,6 +4,7 @@
 import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
 
+
 // type PropsA = {
 //     title: string,
 //     description: string,
@@ -72,7 +73,7 @@ function App() {
              title= "Second Title"
              description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates"
          />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p className ="text-red-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </Layout>
 
         </>
