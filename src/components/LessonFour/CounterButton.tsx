@@ -1,7 +1,7 @@
 type ButtonProps = {
     label: string;
     onClick: () => void;
-    disabled?:boolean;
+    disabled?: boolean;
     addClasses?: string;
 }
 
@@ -10,12 +10,12 @@ const CounterButton = (
     return (
         <>
             <button
-              className={`disabled:bg-cf-dark-gray text-white py-2 px-4 rounded-2xl ${addClasses}`}
-              onClick={onClick}
-              disabled={disabled}
+                className={`disabled:bg-cf-gray text-white py-2 px-4 rounded-2xl ${addClasses}`}
+                // className={"disabled:bg-cf-gray text-white py-2 px-4 " + addClasses }
+                onClick={onClick}
+                disabled={disabled}
             >
                 {label}
-
             </button>
         </>
     )

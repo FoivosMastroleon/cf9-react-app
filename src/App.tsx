@@ -3,7 +3,11 @@
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
-import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
+import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import Counter from "./components/LessonFour/Counter.tsx";
+// import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
+// import {useState} from "react";
+
 // type PropsA = {
 //   title: string,
 //   description: string,
@@ -40,7 +44,9 @@ import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 //   image: string,
 // }
 // // PropsThree = {title, description, price, sort, image}
+
 function App() {
+
     return (
         <>
             {/*LESSON TWO*/}
@@ -50,21 +56,28 @@ function App() {
             {/*<FunctionalComponent />*/}
             {/*<ClassComponent />*/}
             {/*<ArrowFunctionalComponent />*/}
+
             {/*LESSON THREE*/}
             {/*<ArrowFunctionalComponentWithProps title="Heading 1"/>*/}
             {/*<ArrowFunctionalComponentWithProps*/}
             {/*  title="Second Title"*/}
             {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
             {/*/>*/}
+            {/*<Layout addClasses="bg-gray-100">*/}
+            {/*  <ArrowFunctionalComponentWithProps*/}
+            {/*    title="Second Title"*/}
+            {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
+            {/*  />*/}
+            {/*</Layout>*/}
+
+            {/*LESSON FOUR*/}
             <Layout addClasses="bg-gray-50">
-                {/*<ArrowFunctionalComponentWithProps*/}
-                {/*  title="Second Title"*/}
-                {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
-                {/*/>*/}
-                {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reiciendis.</p>*/}
-                <ClassCounter/>
+                {/*<Counter/>*/}
+                {/*<ClassCounter/>*/}
+                <CounterAdvanced/>
             </Layout>
         </>
     )
 }
+
 export default App
